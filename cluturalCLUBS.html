@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Add a class for the parallax effect */
+        .parallax-container {
+            overflow: hidden;
+            position: relative;
+            height: 400px; /* Set the height of the parallax container */
+        }
+
+        .parallax-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.5s;
+        }
+
+        /* Add some spacing for better visibility */
+        .wrapper {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Cultural Clubs</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar main-wrapper-item" id="nav-bar">
+        <h2>BU News</h2>
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item">
+                <a href="index.html">Home</a>
+            </li>
+        </ul>
+        <!-- hamburger button for mobile devices -->
+        <!-- toggle-button for javascript -->
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <div class="wrapper">
+        <main>
+
+            <!-- heading article on home page -->
+            <div class="parallax-container" id="parallax">
+                <div class="parallax-content" style="background-image: url('images/rivaazimg.jpg');">
+                    <h1>Rivaaz BU</h1>
+                    <p>
+                        Welcome to Rivaaz! ✨
+                        <br>
+                        The Traditional Dance Club of @bennettuniv! 🌸
+                        <br>
+                        Classical & Folk
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ... (unchanged) -->
+
+        </main>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="wrapper">
+        <main>
+
+            <!-- heading article on home page -->
+            <div class="parallax-container" id="parallax">
+                <div class="parallax-content" style="background-image: url('images/verveimg.jpg');">
+                    <h1>Verve BU</h1>
+                    <p>
+                        • Western Dance Club, BU -
+                            <br>
+                            A dance crew filled with @bennettians that makes @bennettuniv get on their feet and dance!💃💃
+                            <br>
+                            - winner pan India
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ... (unchanged) -->
+
+        </main>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="wrapper">
+        <main>
+
+            <!-- heading article on home page -->
+            <div class="parallax-container" id="parallax">
+                <div class="parallax-content" style="background-image: url('images/anshimg.jpg');">
+                    <h1>Ansh BU</h1>
+                    <p>
+                        Dramatics and Theatrical Club of @bennettuniv ✨
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ... (unchanged) -->
+
+        </main>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <main>
+
+            <!-- heading article on home page -->
+            <div class="parallax-container" id="parallax">
+                <div class="parallax-content" style="background-image: url('images/isacimg.jpg');">
+                    <h1>ISAC BU</h1>
+                    <p>
+                        the media club at @bennettuniv
+                            <br>
+                            Photographers
+                            <br>
+                            filmmaker
+                            <br>
+                            graphic designer
+                            <br>
+                            all media artists 📸
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ... (unchanged) -->
+
+        </main>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrapper">
+        <main>
+
+            <!-- heading article on home page -->
+            <div class="parallax-container" id="parallax">
+                <div class="parallax-content" style="background-image: url('images/panscheimg.jpg');">
+                    <h1>Panache BU</h1>
+                    <p>
+                        Team Leaders
+                            <br>
+                            @spurryaa @lovekesh_j9 @shreya33__ @chinmay01_
+                            <br>
+                            To know more/be a part of panache,Join us here🎀
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ... (unchanged) -->
+
+        </main>
+    </div>
+
+    <!-- ... (unchanged) -->
+
+    <!-- script for external javascript file -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <script>
+        // Update the parallax content on scroll
+        window.addEventListener("scroll", function () {
+            var parallax = document.getElementById("parallax");
+            var scrolled = window.scrollY;
+            parallax.style.backgroundPositionY = -(scrolled * 0.2) + "px";
+        });
+    </script>
+</body>
+
+</html>
